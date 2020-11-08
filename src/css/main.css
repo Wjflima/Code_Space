@@ -52,13 +52,35 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
 
 article,
 aside,
 figcaption,
 figure,
 footer,
-header,
 hgroup,
 main,
 nav,
@@ -76,6 +98,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
+  background: linear-gradient(0deg, #00a6fb -75%, #006494 25%, #2f0949 100%);
   background-color: var(--sc-purple);
 }
 
