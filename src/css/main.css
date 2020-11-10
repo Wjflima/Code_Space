@@ -89,7 +89,6 @@ section {
 }
 
 body {
-  background: linear-gradient(25deg, #00a6fb -75%, #006494 25%, #2f0949 100%);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -99,7 +98,17 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: var(--sc-purple);
+  background: linear-gradient(
+    -45deg,
+    #4361ee,
+    #3f37c9,
+    #3a0ca3,
+    #560bad,
+    #7209b7
+  );
+  background-size: 500%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6308,6 +6317,18 @@ a.badge-sc-purple.focus {
   }
   to {
     background-position: 0 0;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }
 
