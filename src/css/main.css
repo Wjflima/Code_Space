@@ -98,21 +98,10 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background: linear-gradient(
-    -45deg,
-    #4361ee,
-    #3f37c9,
-    #3a0ca3,
-    #560bad,
-    #7209b7
-  );
-  background-size: 500%;
+  background: linear-gradient(-45deg, #3f37c9, #3a0ca3, #560bad, #7209b7);
+  background-size: 400%;
   position: relative;
   animation: change 10s ease-in-out infinite;
-}
-
-col {
-  background-color: var(--warning);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -124,7 +113,10 @@ col {
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
 }
-
+.tp {
+  font-size: 22px;
+  font-family: "Source Sans Pro", sans-serif;
+}
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -135,8 +127,12 @@ hr {
 h2 {
   font-family: "Source Sans Pro Bold 700", sans-serif;
 }
+
+h3 {
+  font-family: "Source Sans Pro Bold 700", sans-serif;
+}
+
 h1,
-h3,
 h4,
 h5,
 h6 {
